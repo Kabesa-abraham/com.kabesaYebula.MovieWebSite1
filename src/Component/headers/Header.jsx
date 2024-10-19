@@ -13,10 +13,10 @@ const Header = () => {
       <AiOutlineMenu className='bx-menu' id='menu_icon' />
 
       <ul className='option_container' >
-        <li className='home_actives' >Home</li>
-        <li>Filmes</li>
-        <li>Coming</li>
-        <li>Newsletter</li>
+        <li className='home_actives' ><a href="#">Home</a></li>
+        <li><a href="#">Filmes</a></li>
+        <li><a href="#">Coming</a></li>
+        <li><a href="#">Newsletter</a></li>
       </ul>
 
       <button className='bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 sign_btn' >Se Connecter</button>

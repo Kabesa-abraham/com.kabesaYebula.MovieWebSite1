@@ -1,0 +1,42 @@
+.containers{
+    margin: 5% 0;
+}
+.heading{
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-color2);
+}
+.movies_container{
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px , auto));
+    gap: 1rem;
+    row-gap: 5.5em;
+    margin-top: 2rem;
+}
+.box .box-img{
+    width: 100%;
+    height: 270px;
+}
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .box-img img:hover{
+    transform: translateY(-10px);
+    transition: .2s all linear;
+}
+.infoMovie h3{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.infoMovie span{
+    font-size: 15px;
+}
