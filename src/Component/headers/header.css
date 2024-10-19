@@ -1,5 +1,5 @@
 header{
-    position: fixed;
+    position: fixed; /*pour faire comme-ci le navbar n'occupe pas de l'espace*/
     width: 100%;
     top: 0;
     right: 0;
@@ -7,9 +7,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 30px 100px;
     transition: 0.5s;
-    /* background-color: var(--main-color); */
+    /* background-color: var(--main-color);  */
 }
 .logo{
     font-size: 1.2rem;
@@ -21,7 +21,7 @@ header{
 }
 .logo .bxs-movie{
     font-size: 25px;
-    color: var(--main-color);
+    color: var(--main-color2  );
 }
 
 .option_container{
@@ -57,8 +57,8 @@ header{
 }
 
 .sign_btn{
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 15px;
+    padding: 8px 20px;
     font-weight: 500;
     border-radius: 10px;
 }

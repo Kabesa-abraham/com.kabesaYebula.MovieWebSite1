@@ -1,0 +1,73 @@
+.container{
+    max-width: 100%;
+    width: 100%;
+    min-height: 640px;
+    background:black;
+}
+.container .slider_wrapper{
+  /* width: 100vw;
+  height: 100vh; */
+  display: grid;
+  grid-template-columns: repeat(3, 100%); 
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.slider_wrapper .image_list{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.slider_wrapper .image_list .img_item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 55%;
+}
+
+.image_list .home_text{
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+    position: absolute;
+    font-size: 2em;
+    top: 40%;
+    left: 10%;
+    z-index: 1000;
+}
+.home_text span{
+    color: var(--bg-color);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.home_text h1{
+    color: var(--bg-color);
+    font-size: 4rem;
+    font-weight: 700;
+    width: 7.4em;
+}
+.home_text .bookButton{
+    width: 40%;
+    font-size: .8em;
+    padding: 8px 15px;
+    border-radius: 12px;  
+}
+.playbutton{
+    position: absolute;
+    right:-240%;
+    bottom: -65%;
+}
+.playbutton .faplay{
+    width: 2em;
+    height: 2em;
+    padding: 11px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    border: 5px solid rgb(2,3,7,0.4);
+    color: var(--main-color);
+}
+.playbutton .faplay:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    transition: .2s all linear;
+}
