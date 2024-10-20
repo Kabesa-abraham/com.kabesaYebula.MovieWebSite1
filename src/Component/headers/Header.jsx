@@ -1,12 +1,27 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './header.css'
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdMovie } from "react-icons/md";
 
 const Header = () => {
 
+ const [scrolled,setScrolled] = useState(false); //pour changer de couleur lorsque on scroll
+ useEffect(()=>{
+  const myScroll = () =>{
+    if(window.scrollY > 100){
+      setScrolled(true)
+    }else{
+      setScrolled(false)
+    }}
+    window.addEventListener("scroll", myScroll)
+
+    return () =>{
+      window.removeEventListener("scroll" , myScroll)
+    }
+ },[])
+  
   return (
-    <header>
+    <header className={scrolled ? "header shadows" : "header"}>
       <a href='#' className='logo' >
         <MdMovie className='bxs-movie' /> EMovie
       </a>

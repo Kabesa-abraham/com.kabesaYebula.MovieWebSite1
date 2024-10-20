@@ -4,12 +4,21 @@
 
 *{
   list-style: none;
-  margin: 0;
+  margin: 0; 
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   scroll-padding-top:2rem;
   scroll-behavior: smooth;
+  scrollbar-width:thin;
+}
+html::-webkit-scrollbar{  /*ceci sera apparait pour chrome edge safari*/
+  width: .2rem; 
+  background: var(--text-color);
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--main-color2);
+  border-radius: 5rem;
 }
 
 :root{

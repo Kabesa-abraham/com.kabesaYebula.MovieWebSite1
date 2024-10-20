@@ -1,4 +1,4 @@
-header{
+.header{
     position: fixed; /*pour faire comme-ci le navbar n'occupe pas de l'espace*/
     width: 100%;
     top: 0;
@@ -10,8 +10,9 @@ header{
     padding: 30px 100px;
     transition: 0.5s;
 }
-.header.shadow{ /*pour mettre un autre couleur lors du scroll*/
-    background-color: var(--main-color);
+.header.shadows{ /*pour mettre un autre couleur lors du scroll*/
+    background-color: var(--bg-color);
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
 }
 .logo{
     font-size: 1.2rem;
@@ -20,6 +21,9 @@ header{
     display: flex;
     align-items: center;
     column-gap: .5em;
+}
+.header.shadows .logo{ /*pour mettre un autre couleur lors du scroll*/
+    color: var(--text-color);
 }
 .logo .bxs-movie{
     font-size: 25px;
@@ -36,6 +40,10 @@ header{
     font-weight: 600;
     color: var(--bg-color);
 }
+.header.shadows .option_container li{
+    color: var(--text-color);
+}
+
 .option_container li::after{  /*pour mettre une ligne en bas des options un peu animé en mettant en bas un hover*/
     content: '';
     height: 3px;
