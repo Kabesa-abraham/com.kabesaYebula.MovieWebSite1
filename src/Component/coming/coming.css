@@ -1,0 +1,26 @@
+.coming_container{
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px , auto));
+    gap: 1rem;
+    row-gap: 5.5em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.box-imgs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+.box-imgs img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;   
+}
+.box .box-imgs img:hover{
+ transform: translateY(-10px);
+ transition: .2s all linear;
+}
