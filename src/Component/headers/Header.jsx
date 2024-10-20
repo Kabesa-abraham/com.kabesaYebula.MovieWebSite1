@@ -19,7 +19,7 @@ const Header = () => {
         <li><a href="#">Newsletter</a></li>
       </ul>
 
-      <button className='bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 sign_btn' >Se Connecter</button>
+      <button className='bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 btn' >Se Connecter</button>
     </header>
   )
 }
