@@ -5,6 +5,7 @@ import Movie from "./Component/movie/Movie";
  //j'ai importé le fichier css de swiper pour l'utiliser dans tout mon app
  import 'swiper/css'
 import NewsLetter from "./Component/newsletter/NewsLetter";
+import Footer from "./Component/footer/Footer";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Movie/>
           <Coming/>
           <NewsLetter/>
+          <Footer/>
     </div>
   )
 }

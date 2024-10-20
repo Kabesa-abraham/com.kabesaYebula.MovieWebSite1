@@ -9,7 +9,9 @@ header{
     justify-content: space-between;
     padding: 30px 100px;
     transition: 0.5s;
-    /* background-color: var(--main-color);  */
+}
+.header.shadow{ /*pour mettre un autre couleur lors du scroll*/
+    background-color: var(--main-color);
 }
 .logo{
     font-size: 1.2rem;

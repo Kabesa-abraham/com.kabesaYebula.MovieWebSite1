@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './header.css'
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdMovie } from "react-icons/md";
 
 const Header = () => {
+
   return (
     <header>
-      <div className='logo' >
+      <a href='#' className='logo' >
         <MdMovie className='bxs-movie' /> EMovie
-      </div>
+      </a>
 
       <AiOutlineMenu className='bx-menu' id='menu_icon' />
 
