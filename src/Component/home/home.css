@@ -73,3 +73,61 @@
 .playbutton:hover .faplay{
     color: var(--bg-color);
 }
+
+@media (max-width:1280px){
+    .playbutton{
+        right:-110%;
+        bottom: -55%; 
+    } 
+}
+
+@media (max-width:1080px){
+    .home_text span{
+        font-size: 20px;
+    }
+    .home_text h1{   
+        font-size: 3rem;
+        width: 7.4em;
+    }
+    .home_text .bookButton{
+        width: 60%;
+        font-size: .5em;
+        padding: 8px 10px;
+        border-radius: 9px;  
+    }
+    .playbutton{
+        bottom: -65%; 
+    } 
+}
+
+@media (max-width:768px){
+    .playbutton{
+        right:-50%;
+        bottom: -75%; 
+    } 
+}
+
+@media (max-width:640px){
+    .home_text span{
+        font-size: 15px;
+    }
+    .home_text h1{   
+        font-size: 2rem;
+        width: 7.4em;
+    }
+    .home_text .bookButton{
+        width: 50%;
+        font-size: .4em;
+        padding: 8px 7px;
+        border-radius: 6px;  
+    }
+    .playbutton{
+        right: -90%;  
+        bottom: -160%; 
+    } 
+}
+@media (max-width:500px){
+    .playbutton{
+        right: -50%;  
+    } 
+}

@@ -4,7 +4,7 @@ import filme_data from '../../assets/filmData'
 
 const Movie = () => {
   return (
-    <div className='containers' >
+    <div className='containers' id='movies'>
       <h2 className='heading' >Opening cette Semaine</h2>
       <div className='movies_container' >
       {

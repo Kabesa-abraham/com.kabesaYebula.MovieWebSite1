@@ -7,7 +7,7 @@ import {Swiper,SwiperSlide} from 'swiper/react'
 
 const Coming = () => {
   return (
-    <div>
+    <div id='coming'>
       <h2 className='heading' >Coming Bientôt</h2>
       <Swiper
          breakpoints={{  /* pour gerer l'affichage des movies selon la dimension d'écran*/

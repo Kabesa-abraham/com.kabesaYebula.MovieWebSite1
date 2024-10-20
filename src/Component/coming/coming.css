@@ -24,3 +24,9 @@
  transform: translateY(-10px);
  transition: .2s all linear;
 }
+
+@media (max-width:1080px){
+    #coming{
+        margin:6em 0;
+    }
+}

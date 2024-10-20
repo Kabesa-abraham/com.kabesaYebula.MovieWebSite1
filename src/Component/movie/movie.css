@@ -40,3 +40,14 @@
 .infoMovie span{
     font-size: 15px;
 }
+
+@media (max-width:1080px){
+    .heading{
+        font-size: 1.5em;
+    }
+}
+@media (max-width:680){
+    .heading{
+        font-size: 1em;
+    }
+}

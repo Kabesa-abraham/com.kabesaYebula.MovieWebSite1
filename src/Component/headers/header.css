@@ -60,10 +60,20 @@
 }
 
 #menu_icon{
-    font-size: 24px;
+    font-size: 33px;
     cursor: pointer;
     z-index: 1000001;
     display: none;
+    padding: 4px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+#menu_icon:hover{
+    background-color: rgba(248, 248, 248, 0.277);
+    transition: .2s all linear;
+}
+.header.shadows #menu_icon{
+    color: var(--text-color);
 }
 
 .btn{
@@ -71,4 +81,63 @@
     padding: 8px 20px;
     font-weight: 500;
     border-radius: 10px;
+}
+
+
+
+@media (max-width:991px) {
+    .header{
+        padding: 20px 40px;
+    }
+    .option_container{
+        column-gap: 3.5rem;
+    }
+    .option_container li{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:774px) {
+    .header{
+        padding: 20px 30px;
+    }
+    #menu_icon{
+        display: inline;
+    }
+    .option_container{
+        position:absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        text-align: center;
+        transition: .3s all linear;
+    }
+    .option_container.active{
+        transition: .3s all linear;
+        top: 100%;
+      
+    }
+    .option_container li{
+        color: var(--text-color);
+    }
+    .option_container li a:hover{
+        color: var(--main-color2);
+        border-bottom: solid 2px var(--main-color2);
+        transition: .1s all linear;
+    }
+    .option_container li::after{
+        display: none;
+    }
+
+@media (max-width:472px) {
+    .header{
+        padding: 5px 20px;
+    }
+}
+
 }
